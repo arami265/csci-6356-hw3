@@ -1,20 +1,25 @@
 # csci-6356-hw3
-
+Completes the tasks outlined in Homework 3 for Dr. Fu's CSCI 6356.
 Written by Arnoldo Ramirez at UTRGV, 2019.
 
-This project contains two programs:
+Specifically, this program will find:
+- The least prime number q where q > n
+- The least prime twin (q, q+2) where q > n
+- The total number of prime twins (p, p+2) where (p+2) < n
 
-- `min_prime_and_twins.cpp` for problems 1-4
-- `twin_count.cpp` for problem 5
-
-### How to build
-With MPI wrapper installed (preferably on Linux), run
-
-`mpic++ min_prime_and_twins.cpp` or
-
-`mpic++ twin_count.cpp`.
+### How to compile
+With MPI wrapper installed (preferably on Linux), run:
+`mpic++ hw3.cpp`
 
 ### How to run
-For `min_prime_and_twins.cpp` run something like: `mpirun -np 5 a.out 10`.
+After compiling, you can run something like:
+`mpirun -np 5 -stdin 4 a.out 10`
+or
+`mpirun -np 5 -stdin 4 a.out 5000`
+or
+`mpirun -np 5 -stdin 4 a.out 1000000`
 
-For `twin_count.cpp` run something like: `mpirun -np 5 a.out 1000000`.
+### Examples
+Below you can see three example outputs,
+specifically where n=10, n=50, and n=1000000:
+![Example](/docs/example.png?raw=true)
