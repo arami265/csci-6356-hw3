@@ -13,6 +13,7 @@ With MPI wrapper installed (preferably on Linux), run:
 
 ### How to run
 After compiling, you can run something like:
+
 `mpirun -np 5 -stdin 4 a.out 10`
 or
 `mpirun -np 5 -stdin 4 a.out 5000`
@@ -22,4 +23,5 @@ or
 ### Examples
 Below you can see three example outputs,
 specifically where n=10, n=50, and n=1000000:
+
 ![Example](/docs/example.png?raw=true)
