@@ -183,7 +183,7 @@ int main (int argc, char *argv[])
     //The results are printed after being computed.
     printf("n = %s\n\n", argument1.c_str());
     printf("Minimum prime > n: %d\n\n", min_prime_found);
-    printf("Minimum prime twin > n: (%d,%d)\n\n", min_twin_found, min_twin_found+2);
+    printf("Minimum prime twin > n: (%d, %d)\n\n", min_twin_found, min_twin_found+2);
     printf("Total sum of prime twins < n: %d\n\n", total_twin_count);
   }
 
